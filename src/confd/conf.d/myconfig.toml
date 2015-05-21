@@ -12,10 +12,10 @@ dest = "/etc/nginx/nginx.conf"
 keys = [ "/registry/services/specs/" ]
 
 # File ownership and mode information
-owner = "root"
+owner = "gferreira"
 mode = "0644"
 
 # These are the commands that will be used to check whether the rendered config is
 # valid and to reload the actual service once the new config is in place
-check_cmd = "/usr/sbin/nginx -t -c {{.src}}"
-reload_cmd = "/usr/sbin/service nginx reload"
+#check_cmd = "/usr/sbin/nginx -t -c {{.src}}"
+#reload_cmd = "/usr/sbin/service nginx reload"

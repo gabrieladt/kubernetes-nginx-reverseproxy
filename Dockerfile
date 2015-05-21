@@ -5,12 +5,14 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN rm /var/lib/apt/lists/* -vfr
+
 # Prepare requirements 
 RUN apt-get update -qy && \
     apt-get install --no-install-recommends -qy software-properties-common
 
 # setup confd
-ADD https://github.com/kelseyhightower/confd/releases/download/v0.6.3/confd-0.6.3-linux-amd64 /usr/local/bin/confd
+ADD ./src/confd-0.9.0-linux-amd64 /usr/local/bin/confd
 RUN chmod u+x /usr/local/bin/confd && \
 	mkdir -p /etc/confd/conf.d && \
 	mkdir -p /etc/confd/templates
