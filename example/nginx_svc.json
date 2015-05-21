@@ -8,6 +8,6 @@
     "name": "my-nginx"
   },
   "annotations": {
-    "kubernetesReverseproxy":"{\"hosts\": [{\"host\": \"dedalus.test\", \"port\": \"port number\"}]}"
+    "kubernetesReverseproxy":"{\"hosts\": [{\"host\": \"dedalus.test\", \"port\": \"80\"}]}"
   }
 }
