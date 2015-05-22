@@ -3,7 +3,7 @@
 # Fail hard and fast
 set -eo pipefail
 
-export ETCD=$CONFD_ETCD_NODE
+export ETCD=172.31.46.26:4001
 
 echo "[nginx] booting container. ETCD: $ETCD"
 
