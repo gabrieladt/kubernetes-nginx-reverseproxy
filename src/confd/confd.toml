@@ -2,7 +2,7 @@ backend = "etcd"
 confdir = "/etc/confd"
 interval = 10
 nodes = [
-  "http://172.17.8.101:4001",
+  "http://172.31.46.26:4001",
 ]
 watch = true
 log-level="debug"
